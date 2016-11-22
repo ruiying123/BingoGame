@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import podTest
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,8 @@ class ViewController: UIViewController {
     fileprivate var setNumberArray: [String] = []
     fileprivate var index: Int = 0
     fileprivate var maxNum: Int = 75
+    
+    var per: Person = Person()
     
     override func viewDidLoad() {
         super.viewDidLoad()

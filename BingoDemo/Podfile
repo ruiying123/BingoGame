@@ -1,0 +1,13 @@
+
+source 'https://github.com/ruiying123/Spec.git'
+
+target 'BingoDemo' do
+
+platform :ios, '8.0'
+use_frameworks!
+inhibit_all_warnings!
+
+pod 'podTest', '~> 1.0.0'
+
+end
+

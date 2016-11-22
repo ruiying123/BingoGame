@@ -17,6 +17,7 @@
 		2F3BC8661DCC2F1700DFA60E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BC8651DCC2F1700DFA60E /* HistoryViewController.swift */; };
 		2F3BC8691DCC307800DFA60E /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3BC8671DCC307800DFA60E /* HistoryTableViewCell.swift */; };
 		2F3BC86A1DCC307800DFA60E /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F3BC8681DCC307800DFA60E /* HistoryTableViewCell.xib */; };
+		6D793FFD28F175282FA9152B /* Pods_BingoDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4810BE626F4040F010FB752F /* Pods_BingoDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10373811D4716F2C2F16C862 /* Pods-BingoDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingoDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BingoDemo/Pods-BingoDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2F3BC8341DCC2A5B00DFA60E /* BingoDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BingoDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3BC8371DCC2A5B00DFA60E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F3BC8391DCC2A5B00DFA60E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +55,8 @@
 		2F3BC8651DCC2F1700DFA60E /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		2F3BC8671DCC307800DFA60E /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		2F3BC8681DCC307800DFA60E /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		4810BE626F4040F010FB752F /* Pods_BingoDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BingoDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A85B4CF01EBCADE43FA17618 /* Pods-BingoDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BingoDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BingoDemo/Pods-BingoDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D793FFD28F175282FA9152B /* Pods_BingoDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		008E97F0F42BE21B3802EB84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4810BE626F4040F010FB752F /* Pods_BingoDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0CD15F3EEB7294ADDA7B700B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A85B4CF01EBCADE43FA17618 /* Pods-BingoDemo.debug.xcconfig */,
+				10373811D4716F2C2F16C862 /* Pods-BingoDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		2F3BC82B1DCC2A5B00DFA60E = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +109,8 @@
 				2F3BC84B1DCC2A5B00DFA60E /* BingoDemoTests */,
 				2F3BC8561DCC2A5B00DFA60E /* BingoDemoUITests */,
 				2F3BC8351DCC2A5B00DFA60E /* Products */,
+				0CD15F3EEB7294ADDA7B700B /* Pods */,
+				008E97F0F42BE21B3802EB84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,9 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F3BC85C1DCC2A5B00DFA60E /* Build configuration list for PBXNativeTarget "BingoDemo" */;
 			buildPhases = (
+				36EF546123B7EC0BEDC774ED /* [CP] Check Pods Manifest.lock */,
 				2F3BC8301DCC2A5B00DFA60E /* Sources */,
 				2F3BC8311DCC2A5B00DFA60E /* Frameworks */,
 				2F3BC8321DCC2A5B00DFA60E /* Resources */,
+				023CEE116C22DB9939042EBF /* [CP] Embed Pods Frameworks */,
+				102785271AF3C438EE68C2BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,6 +292,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		023CEE116C22DB9939042EBF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingoDemo/Pods-BingoDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		102785271AF3C438EE68C2BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BingoDemo/Pods-BingoDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36EF546123B7EC0BEDC774ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F3BC8301DCC2A5B00DFA60E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -346,6 +421,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -396,6 +472,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -423,7 +500,9 @@
 		};
 		2F3BC85D1DCC2A5B00DFA60E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A85B4CF01EBCADE43FA17618 /* Pods-BingoDemo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CSCTFK776L;
 				INFOPLIST_FILE = BingoDemo/Info.plist;
@@ -438,7 +517,9 @@
 		};
 		2F3BC85E1DCC2A5B00DFA60E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10373811D4716F2C2F16C862 /* Pods-BingoDemo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = CSCTFK776L;
 				INFOPLIST_FILE = BingoDemo/Info.plist;
