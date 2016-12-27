@@ -8,6 +8,7 @@
 
 import UIKit
 import podTest
+import YRExtension
 
 class ViewController: UIViewController {
 
@@ -20,9 +21,7 @@ class ViewController: UIViewController {
     fileprivate var setNumberArray: [String] = []
     fileprivate var index: Int = 0
     fileprivate var maxNum: Int = 75
-    
-    var per: Person = Person()
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Bingo"
@@ -31,6 +30,7 @@ class ViewController: UIViewController {
         }
         startButton.setTitle("开始", for: .normal)
         startButton.setTitle("结束", for: .selected)
+//        print(title?.checkIDNumber())
     }
     
     override func viewWillAppear(_ animated: Bool) {
