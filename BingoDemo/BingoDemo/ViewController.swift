@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import podTest
+//import podTest
 import YRExtension
 
 class ViewController: UIViewController {
@@ -30,7 +30,8 @@ class ViewController: UIViewController {
         }
         startButton.setTitle("开始", for: .normal)
         startButton.setTitle("结束", for: .selected)
-//        print(title?.checkIDNumber())
+        numLabel.textColor = UIColor.white.withAlphaComponent(0.5)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
